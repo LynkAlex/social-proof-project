@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Spartan', sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(bg-pattern-top-mobile.svg), url(bg-pattern-bottom-mobile.svg);
+  background-position: top, bottom;
+  background-repeat: no-repeat, no-repeat;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.title  {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-self: center;
+}
+
+.title-heading {
+  font-size: 40px;
+  text-align: center;
+  color: #511f50;
+  font-weight: 700;
+  padding-top: 70px;
+  padding-bottom: 10px;
+}
+
+.title-text {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+  color: #787276;
+}
+
+.rating-cards {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.rating-card {
+  background-color: #f7f2f8;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  border-radius: 10px;
+}
+
+.user-feedback {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  align-self: center;
+  color: whitesmoke;
+  margin-bottom: 50px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.user-text {
+  line-height: 1.5;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.user-cards {
+  display: flex;
+  flex-direction: column;
+  background-color: #511f50;
+  border-radius: 10px;
+  margin-top: 25px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.user-img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  align-self: center;
+}
+
+.user-avatar {
+  display: flex;
+  align-self: center;
+  margin-right: 20px;
+}
+
+.margins {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.user-info {
+  margin-bottom: 10px;
+}
+
+.user-text {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.rating-text {
+  color: #573254;
+  font-weight: 700;
+}
+
+.verified-text {
+  color: #9e5187;
+}
+
+.user-verified {
+  font-size: 12px;
+  align-self: center;
+  line-height: 1.5;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
