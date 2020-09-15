@@ -19,10 +19,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-image: url(bg-pattern-top-mobile.svg), url(bg-pattern-bottom-mobile.svg);
-  background-position: top, bottom;
+  background-position: left top, right bottom;
   background-repeat: no-repeat, no-repeat;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.title-and-cards {
+  margin-top: 60px;
 }
 
 .title  {
@@ -145,9 +149,108 @@ body {
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .rating-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-self: center;
+  }
+
+  .user-feedback {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .user-cards {
+    width: 48%;
+    min-height: 250px;
+    align-self: center;
+  }
+
+  .rating-card {
+    width: calc(33.33% - 10px);
+  }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-self: center;
+    background-image: url(bg-pattern-top-desktop.svg), url(bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+  }
 
+  .title-and-cards {
+    width: 80%;
+    display: flex;
+    margin-top: 120px;
+  }
+
+  .title {
+    width: 40%;
+  }
+
+  .rating-cards {
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .rating-card {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    width: 70%;
+    padding-top: 0;
+  }
+
+  .star-icons {
+    align-self: center;
+    width: 40%;
+  }
+
+  .rating-text {
+    width: 60%;
+    text-align: start;
+  }
+
+  .first-rating-card {
+    margin-right: 20%;
+  }
+
+  .second-rating-card {
+    margin-right: 10%;
+  }
+
+  .user-feedback {
+    width: 80%;
+  }
+
+  .user-cards{
+    width: calc(33.33% - 20px);
+  }
+
+  .title-heading {
+    width: 70%;
+    padding: 0;
+    text-align: start;
+  }
+
+  .title-text {
+    width: 75%;
+    text-align: start;
+  }
+
+  .second-user-feedback {
+    margin-top: 5%;
+  }
+
+  .third-user-feedback {
+    margin-top: 10%;
+  }
 }
